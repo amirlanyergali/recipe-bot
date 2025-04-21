@@ -1,0 +1,10 @@
+services:
+  - type: worker
+    name: recipe-bot
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "bash start.sh"
+    envVars:
+      - key: TOKEN
+        value: 7598947295:AAGJ_PCn5OmWlHCKJZwCGnDmV6Rzv6tN0fk
